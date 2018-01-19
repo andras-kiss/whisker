@@ -110,3 +110,10 @@ set out "17052307.eps"
 splot "17052307.txt" u (($1-15)*100):(($2-15)*100):($3) notitle
 unset label
 
+set autoscale
+set label "t = 0 min" at -1300, 1200 tc rgb "white" font ",40" front
+set cbrange [0:0.1]
+set out "18011710.eps"
+splot "18011710.txt" u (($1-15)*100):(-($2-15)*100):($3) notitle
+unset label
+
