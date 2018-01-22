@@ -110,10 +110,103 @@ set out "17052307.eps"
 splot "17052307.txt" u (($1-15)*100):(($2-15)*100):($3) notitle
 unset label
 
+
+# half polyphenol
 set autoscale
 set label "t = 0 min" at -1300, 1200 tc rgb "white" font ",40" front
-set cbrange [0:0.1]
+set cbrange [0.05:0.15]
 set out "18011710.eps"
 splot "18011710.txt" u (($1-15)*100):(-($2-15)*100):($3) notitle
 unset label
 
+set label "t = 10 min" at -1300, 1200 tc rgb "white" font ",40" front
+set out "18011711.eps"
+splot "18011711.txt" u (($1-15)*100):(-($2-15)*100):($3) notitle
+unset label
+
+set label "t = 20 min" at -1300, 1200 tc rgb "white" font ",40" front
+set out "18011712.eps"
+splot "18011712.txt" u (($1-15)*100):(-($2-15)*100):($3) notitle
+unset label
+
+set label "t = 30 min" at -1300, 1200 tc rgb "white" font ",40" front
+set out "18011713.eps"
+splot "18011713.txt" u (($1-15)*100):(-($2-15)*100):($3) notitle
+unset label
+
+set label "t = 40 min" at -1300, 1200 tc rgb "white" font ",40" front
+set out "18011714.eps"
+splot "18011715.txt" u (($1-15)*100):(-($2-15)*100):($3) notitle
+unset label
+
+set label "t = 50 min" at -1300, 1200 tc rgb "white" font ",40" front
+set out "18011715.eps"
+splot "18011715_real.txt" u (($1-15)*100):(-($2-15)*100):($3) notitle
+unset label
+
+set label "t = 60 min" at -1300, 1200 tc rgb "white" font ",40" front
+set out "18011716.eps"
+splot "18011716.txt" u (($1-15)*100):(-($2-15)*100):($3) notitle
+unset label
+
+set label "t = 90 min" at -1300, 1200 tc rgb "white" font ",40" front
+set out "18011717.eps"
+splot "18011717.txt" u (($1-15)*100):(-($2-15)*100):($3) notitle
+unset label
+
+set label "t = 75 min" at -1300, 1200 tc rgb "white" font ",40" front
+set out "18011718.eps"
+splot "18011718.txt" u (($1-15)*100):(-($2-15)*100):($3) notitle
+unset label
+
+set label "t = 110 min" at -1300, 1200 tc rgb "white" font ",40" front
+set out "18011719.eps"
+splot "18011719.txt" u (($1-15)*100):(-($2-15)*100):($3) notitle
+unset label
+
+# full polyphenol
+set cbrange [-0.2:-0.25]
+set label "dry" at -1300, 1200 tc rgb "white" font ",40" front
+set out "18011701.eps"
+splot "18011701.txt" u (($1-15)*100):(-($2-15)*100):($3) notitle
+unset label
+
+set label "t = 0 min" at -1300, 1200 tc rgb "white" font ",40" front
+set out "18011702.eps"
+splot "18011702.txt" u (($1-15)*100):(-($2-15)*100):($3) notitle
+unset label
+
+set label "t = 10 min" at -1300, 1200 tc rgb "white" font ",40" front
+set out "18011703.eps"
+splot "18011703.txt" u (($1-15)*100):(-($2-15)*100):($3) notitle
+unset label
+
+set label "t = 20 min" at -1300, 1200 tc rgb "white" font ",40" front
+set out "18011704.eps"
+splot "18011704.txt" u (($1-15)*100):(-($2-15)*100):($3) notitle
+unset label
+
+set label "t = 30 min" at -1300, 1200 tc rgb "white" font ",40" front
+set out "18011705.eps"
+splot "18011705.txt" u (($1-15)*100):(-($2-15)*100):($3) notitle
+unset label
+
+set label "t = 40 min" at -1300, 1200 tc rgb "white" font ",40" front
+set out "18011706.eps"
+splot "18011706.txt" u (($1-15)*100):(-($2-15)*100):($3) notitle
+unset label
+
+set label "t = 50 min" at -1300, 1200 tc rgb "white" font ",40" front
+set out "18011707.eps"
+splot "18011707.txt" u (($1-15)*100):(-($2-15)*100):($3) notitle
+unset label
+
+set label "t = 60 min" at -1300, 1200 tc rgb "white" font ",40" front
+set out "18011708.eps"
+splot "18011708.txt" u (($1-15)*100):(-($2-15)*100):($3) notitle
+unset label
+
+#set label "t = 90 min" at -1300, 1200 tc rgb "white" font ",40" front
+#set out "18011709.eps"
+#splot "18011709.txt" u (($1-15)*100):(-($2-15)*100):($3) notitle
+#unset label
