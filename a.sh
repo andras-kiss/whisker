@@ -1,3 +1,5 @@
+gfortran deconvolution.F90
+./a.out
 gnuplot plot
 
 ls *.eps > eps_files
