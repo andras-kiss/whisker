@@ -1,7 +1,7 @@
 %!PS-Adobe-2.0
 %%Title: 18012406.eps
 %%Creator: gnuplot 5.0 patchlevel 5
-%%CreationDate: Wed Jan 24 23:36:22 2018
+%%CreationDate: Thu Jan 25 14:18:17 2018
 %%DocumentFonts: (atend)
 %%BoundingBox: 50 50 554 770
 %%Orientation: Landscape
@@ -471,7 +471,7 @@ SDict begin [
   /Creator (gnuplot 5.0 patchlevel 5)
 %  /Producer (gnuplot)
 %  /Keywords ()
-  /CreationDate (Wed Jan 24 23:36:22 2018)
+  /CreationDate (Thu Jan 25 14:18:17 2018)
   /DOCINFO pdfmark
 end
 } ifelse
@@ -584,7 +584,8 @@ Color InterpolatedColor or { % COLOUR vs. GRAY map
     /g {stroke pm3dround /grayv exch def interpolate
         SelectSpace setrgbcolor} bind def
   }{
-  /g {stroke pm3dround dup cF7 Constrain exch dup cF5 Constrain exch cF15 Constrain 
+  /g {stroke pm3dround dup 1 exch sub cF22 Constrain exch dup 1 exch sub cF13 Constrain exch 
+	cF31 Constrain 
        SelectSpace setrgbcolor} bind def
   } ifelse
 }{
@@ -15232,7 +15233,7 @@ grestore
 LTb
 1.000 UP
 1.00 1.00 1.00 C 2021 4048 M
-[ [(Helvetica) 400.0 0.0 true true 0 (t = 0 min)]
+[ [(Helvetica) 400.0 0.0 true true 0 (raw image)]
 ] -133.3 MLshow
 grestore % colour palette end
 stroke
