@@ -1,7 +1,7 @@
 set size square
 set pm3d map
 #set dgrid3d 31, 31, 10, gauss 80, 80
-set pm3d interpolate 2,2
+set pm3d interpolate 3,3
 #set contour
 #set cntrparam levels auto 10
 set term postscript enhanced color
@@ -36,7 +36,7 @@ set xlabel offset 0,-1
 ### SCANS
 set size square
 set pm3d map
-set dgrid3d 31, 31, 10, gauss 40, 40
+set dgrid3d 31, 31, 10, gauss 80, 80
 set pm3d interpolate 2,2
 set xtics -1500, 1500, 1500
 set ytics -1500, 1500, 1500
@@ -233,14 +233,28 @@ set palette negative cubehelix saturation 2
 
 
 
+
+set object 1 circle at 340,80 size first 640 fc rgb "white" front
 set cbrange [0:0.5]
-set label "raw image" at -1300, 1200 tc rgb "white" font ",40" front
+set label "A2" at -1300, 1200 tc rgb "white" font ",40" front
 set out "18012406.eps"
 splot "18012406.txt" u (($1-30)*50):(-($2-30)*50):($3) notitle
 unset label
 
-set label "deconvoluted" at -1300, 1200 tc rgb "white" font ",40" front
+set label "B2" at -1300, 1200 tc rgb "white" font ",40" front
 set out "18012406_deconvoluted.eps"
 splot "18012406_deconvoluted.txt" u (($1-30)*50):(-($2-30)*50):($3) notitle
+unset label
+unset object 1
+
+set object 1 circle at 140,80 size first 640 fc rgb "white" front
+set label "A1" at -1300, 1200 tc rgb "white" font ",40" front
+set out "18012501.eps"
+splot "18012501.txt" u (($1-30)*50):(-($2-30)*50):($3) notitle
+unset label
+
+set label "B1" at -1300, 1200 tc rgb "white" font ",40" front
+set out "18012501_deconvoluted.eps"
+splot "18012501_deconvoluted.txt" u (($1-30)*50):(-($2-30)*50):($3) notitle
 unset label
 
