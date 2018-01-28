@@ -36,7 +36,7 @@ set xlabel offset 0,-1
 ### SCANS
 set size square
 set pm3d map
-set dgrid3d 31, 31, 10, gauss 80, 80
+set dgrid3d 31, 31, 10, gauss 50, 50
 set pm3d interpolate 2,2
 set xtics -1500, 1500, 1500
 set ytics -1500, 1500, 1500
@@ -206,7 +206,7 @@ unset label
 ### SCANS
 set size square
 set pm3d map
-set dgrid3d 61, 61, 10 , gauss 30, 30
+set dgrid3d 61, 61, 10, gauss 30, 30
 set pm3d interpolate 2,2
 set xtics -1500, 1500, 1500
 set ytics -1500, 1500, 1500
