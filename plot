@@ -215,7 +215,7 @@ set xrange [-1500:1500]
 #set dgrid3d 31, 31, 1
 set cblabel "E vs. Fe target / V"
 
-set palette negative cubehelix saturation 2
+#set palette negative cubehelix saturation 2
 #set palette rgb -21,-22,-23 #hot
 #set palette rgbformulae -22, -13, 31 # quickgrid
 #set palette rgbformulae -33, -13, -10 # rainbow
